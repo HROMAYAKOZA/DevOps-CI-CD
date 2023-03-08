@@ -18,4 +18,5 @@ before_script:
 test:
   script:
     - pytest
-    - flake8
+    - flake8 .
+    - mypy .
