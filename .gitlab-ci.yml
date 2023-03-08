@@ -19,4 +19,4 @@ test:
   script:
     - pytest
     - flake8 .
-    - mypy .
+    - mypy . --config-file pyproject.toml
