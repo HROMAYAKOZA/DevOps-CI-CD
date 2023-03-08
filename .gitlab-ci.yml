@@ -1,6 +1,7 @@
 image: python 3.11
 
-PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
 cache:
   - .cache/pip
