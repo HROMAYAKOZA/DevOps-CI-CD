@@ -2,10 +2,9 @@ image: python 3.11
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-
-cache:
-  - .cache/pip
-  - venv/
+  cache:
+    - .cache/pip
+    - venv/
 
 before_script:
   - python --version
