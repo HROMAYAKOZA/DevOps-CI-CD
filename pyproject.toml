@@ -1,5 +1,5 @@
 [mypy]
 python_version = 3.11
-force-exclude = ["activate_this.py", ".git", ".gitignore", "__pycache__", ".venv", "__init__", ".pytest_cache", "venv"]
+force-exclude = "activate_this.py"
 disallow_untyped_defs = true
 ignore_missing_imports = true
