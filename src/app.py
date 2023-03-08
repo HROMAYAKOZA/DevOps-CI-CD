@@ -1,5 +1,3 @@
-print("hello-world")
-
 from fastapi import FastAPI
 from src.functional import calculation
 
