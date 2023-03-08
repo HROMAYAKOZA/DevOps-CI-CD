@@ -11,7 +11,7 @@ async def root() -> Dict[str, str]:
 
 
 @app.get('/{s}')
-def get_item(s: str) -> float:
+def get_item(s: str) -> float | int:
     ans = calculation(s)
     if ans == int(ans):
         return int(ans)
