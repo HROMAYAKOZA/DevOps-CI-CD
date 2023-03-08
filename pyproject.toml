@@ -1,5 +1,5 @@
 [mypy]
+exclude activate_this.py
 python_version = 3.11
-exclude = "activate_this.py"
 disallow_untyped_defs = true
 ignore_missing_imports = true
