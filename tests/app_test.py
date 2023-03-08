@@ -7,7 +7,7 @@ from src.functional import calculation
 client = TestClient(app)
 
 
-def test_summation():
+def test_summation() -> None:
     response = client.get("/2+2")
     assert response.status_code == 200
     assert response.json() == 4
@@ -15,7 +15,7 @@ def test_summation():
     assert calculation("5+19") == 24
 
 
-def test_multiply():
+def test_multiply() -> None:
     response = client.get("/8*8")
     assert response.status_code == 200
     assert response.json() == 64
@@ -23,7 +23,7 @@ def test_multiply():
     assert calculation("1*2") == 2
 
 
-def test_subtraction():
+def test_subtraction() -> None:
     response = client.get("/29-28")
     assert response.status_code == 200
     assert response.json() == 1
@@ -31,7 +31,7 @@ def test_subtraction():
     assert calculation("5-6") == -1
 
 
-def test_divide():
+def test_divide() -> None:
     response = client.get("/40div8")
     assert response.status_code == 200
     assert response.json() == 5
