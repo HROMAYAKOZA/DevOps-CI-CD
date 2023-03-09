@@ -11,7 +11,7 @@ image: python:3.11.2
 before_script:
   - python --version
   - pip install virtualenv
-  - virtualenv venv`
+  - virtualenv venv
   - source venv/bin/activate
   - pip install -r requirements.txt
 
