@@ -1,4 +1,4 @@
-image: python:3.11
+image: python:3.11.2
 
 # variables:
 #   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
@@ -11,7 +11,7 @@ image: python:3.11
 before_script:
   - python --version
   - pip install virtualenv
-  - virtualenv venv
+  - virtualenv venv`
   - source venv/bin/activate
   - pip install -r requirements.txt
 
