@@ -1,12 +1,12 @@
-image: python:3.11
+image: python:3.8
 
-variables:
-  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+# variables:
+#   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
-cache:
-  paths:
-    - .cache/pip
-    - venv/
+# cache:
+#   paths:
+#     - .cache/pip
+#     - venv/
 
 before_script:
   - python --version
@@ -19,4 +19,4 @@ test:
   script:
     - pytest
     - flake8 .
-    - mypy .
+    - mypy . --config-file pyproject.toml
