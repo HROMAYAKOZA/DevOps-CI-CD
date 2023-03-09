@@ -1,5 +1,5 @@
 [mypy]
-python_version = 3.11
-force-exclude = "activate_this.py"
+python_version = 3.8
+force-exclude = "venv"
 disallow_untyped_defs = true
 ignore_missing_imports = true
