@@ -4,7 +4,7 @@ on: [push]
 
 env:
     SECRETV: ${{ secrets.SECRETV }}
-    PUBV: DefaultVar
+    PUBV: ${{ secrets.PUBV }}
 
 jobs:
   build:
