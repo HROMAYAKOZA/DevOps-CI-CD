@@ -31,4 +31,4 @@ jobs:
       - name: PEP8 test
         run: flake8 .
       - name: AppTest
-        run: apptest
+        run: pytest
