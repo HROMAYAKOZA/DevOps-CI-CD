@@ -2,9 +2,9 @@ name: Python package
 
 on: [push]
 
-env:
-    SECRETV: ${{ secrets.SECRETV }}
-    PUBV: DefaultVar
+# env:
+#     SECRETV: ${{ secrets.SECRETV }}
+#     PUBV: DefaultVar
 
 jobs:
   test:

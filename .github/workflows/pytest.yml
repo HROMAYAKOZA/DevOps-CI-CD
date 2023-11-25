@@ -3,7 +3,7 @@ name: Python package
 on: [push]
 
 env:
-    SECRETV: DefaultSec
+    SECRETV: ${{ secrets.SECRETV }}
     PUBV: DefaultVar
 
 jobs:
