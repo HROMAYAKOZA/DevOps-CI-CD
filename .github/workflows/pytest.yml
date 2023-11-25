@@ -4,7 +4,7 @@ on: [push]
 
 env:
     SECRETV: ${{ secrets.SECRETV }}
-    PUBV: ${{ secrets.PUBV }}
+    PUBV: ${{ vars.PUBV }}
 
 jobs:
   build:
@@ -26,3 +26,5 @@ jobs:
         run: python -c "import sys; print(sys.version)"
       - name: Display variables
         run: python varpy.py
+      - name: Test Display
+        run: echo "${{env.PUBV}}"
