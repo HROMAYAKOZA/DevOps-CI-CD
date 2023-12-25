@@ -52,6 +52,7 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
+          cd testdir
           git pull origin main
           echo "done"
 
